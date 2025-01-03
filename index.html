@@ -48,6 +48,34 @@
         a:hover {
             text-decoration: underline;
         }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .logo-item {
+            max-width: 200px;
+            text-align: center;
+        }
+        .logo-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .logo-item p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -106,8 +134,22 @@
         <p>Learn about our innovative approaches to measuring and reducing carbon footprints in research project activities, part of our commitment to sustainable research practices.</p>
     </div>
 
-    <footer style="text-align: center; margin-top: 40px;">
-        <p><a href="https://github.com/Logic06183/Sustainability_Presentatios">View on GitHub</a></p>
+    <footer class="footer">
+        <div class="logo-container">
+            <div class="logo-item">
+                <img src="images/wits-planetary-health-logo.png" alt="Wits Planetary Health Research Logo">
+                <p>Wits Planetary Health Research</p>
+            </div>
+            <div class="logo-item">
+                <img src="images/idori-logo.png" alt="IDORI Logo">
+                <p>IDORI</p>
+            </div>
+            <div class="logo-item">
+                <img src="images/wits-university-logo.png" alt="University of the Witwatersrand Logo">
+                <p>University of the Witwatersrand</p>
+            </div>
+        </div>
+        <p> 2025 Wits Planetary Health Research. All rights reserved.</p>
     </footer>
 </body>
 </html>

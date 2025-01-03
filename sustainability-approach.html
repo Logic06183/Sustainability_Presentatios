@@ -53,6 +53,34 @@
             padding: 10px;
             border-bottom: 1px solid #ddd;
         }
+        .footer {
+            margin-top: 50px;
+            padding: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .logo-item {
+            max-width: 200px;
+            text-align: center;
+        }
+        .logo-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        .logo-item p {
+            margin: 5px 0;
+            font-size: 0.9em;
+            color: #666;
+        }
     </style>
 </head>
 <body>
@@ -121,10 +149,29 @@
             <h3>External Resources</h3>
             <ul>
                 <li><a href="https://www.ucl.ac.uk/sustainable/leaf/leaf-resources-and-materials" target="_blank">LEAF Framework Resources</a></li>
-                <li><a href="https://github.com/HIGH-Horizons/carbomica" target="_blank">HIGH Horizons Carbomica Tools</a></li>
-                <li><a href="https://www.aku.edu/about/environment/Pages/akdn-ghg-tool.aspx" target="_blank">AKDN Carbon Management Tool</a></li>
+                <li><a href="https://www.aku.edu/about/environment/Documents/Guide%20to%20the%20Aga%20Khan%20Development%20Networks%20Carbon%20Management%20Tool.pdf" target="_blank">AKDN Carbon Management Tool Guide</a></li>
+                <li><a href="https://www.sustainabilityexchange.ac.uk/travel_better_package" target="_blank">Travel Better Package</a></li>
+                <li><a href="https://wellcome.org/grant-funding/guidance/environmental-sustainability-policy" target="_blank">Wellcome Trust Environmental Policy</a></li>
             </ul>
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="logo-container">
+            <div class="logo-item">
+                <img src="images/wits-planetary-health-logo.png" alt="Wits Planetary Health Research Logo">
+                <p>Wits Planetary Health Research</p>
+            </div>
+            <div class="logo-item">
+                <img src="images/idori-logo.png" alt="IDORI Logo">
+                <p>IDORI</p>
+            </div>
+            <div class="logo-item">
+                <img src="images/wits-university-logo.png" alt="University of the Witwatersrand Logo">
+                <p>University of the Witwatersrand</p>
+            </div>
+        </div>
+        <p> 2025 Wits Planetary Health Research. All rights reserved.</p>
+    </footer>
 </body>
 </html>
