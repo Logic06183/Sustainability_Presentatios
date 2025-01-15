@@ -3,221 +3,233 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Sustainability Approach - Wits Planetary Health Research</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap">
+    <title>Sustainability Approach - Wits Planetary Health Research</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&display=swap">
     <style>
+        :root {
+            --primary-blue: #2B3B63;
+            --primary-red: #B71C1C;
+            --text-dark: #333;
+            --text-light: #fff;
+        }
+
         body {
             font-family: 'Libre Franklin', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        .top-bar {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .header {
+            background-color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 20px;
-            line-height: 1.6;
-            color: #333;
-            background-color: #fff;
-        }
-        
-        .content-wrapper {
-            max-width: 720px;
-            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 0 20px;
         }
 
-        h1 {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5em;
-            font-weight: 700;
-            color: #121212;
-            margin: 1em 0;
-            line-height: 1.2;
+        .logo img {
+            height: 60px;
         }
 
-        h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 1.5em;
-            font-weight: 700;
-            color: #121212;
-            margin: 1.5em 0 1em;
+        .nav-menu {
+            display: flex;
+            gap: 30px;
         }
 
-        .approach-section {
-            border-bottom: 1px solid #e2e2e2;
-            padding: 25px 0;
-            margin: 20px 0;
-            background-color: transparent;
-        }
-
-        .strategy-card {
-            border-left: none;
-            padding-left: 0;
-            margin: 2em 0;
-        }
-
-        .strategy-card ul {
-            padding-left: 1.5em;
-            margin: 1em 0;
-        }
-
-        .strategy-card li {
-            margin-bottom: 1em;
-            line-height: 1.6;
-            color: #333;
-        }
-
-        .back-link {
-            font-family: 'Libre Franklin', sans-serif;
-            font-size: 0.9em;
-            color: #666;
+        .nav-menu a {
+            color: var(--text-dark);
             text-decoration: none;
-            margin-bottom: 2em;
-            display: inline-block;
+            font-weight: 500;
         }
 
-        .back-link:hover {
-            color: #121212;
+        .nav-menu a.active {
+            color: var(--primary-red);
+        }
+
+        .hero {
+            background-color: var(--primary-blue);
+            color: var(--text-light);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin: 0;
+            padding: 0 20px;
+        }
+
+        .content {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: var(--primary-blue);
+            font-size: 1.8em;
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            color: var(--primary-blue);
+            font-size: 1.4em;
+            margin-top: 30px;
+        }
+
+        .commitment-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .commitment-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .commitment-list li:before {
+            content: "•";
+            color: var(--primary-red);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .social-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .social-links a {
+            color: white;
+            margin-left: 15px;
+            text-decoration: none;
         }
 
         a {
-            color: #326891;
+            color: var(--primary-blue);
             text-decoration: none;
             border-bottom: 1px solid transparent;
-            transition: border-bottom-color 0.2s;
+            transition: all 0.2s ease;
         }
 
         a:hover {
-            border-bottom-color: #326891;
-            text-decoration: none;
+            color: var(--primary-red);
+            border-bottom-color: var(--primary-red);
         }
 
         .resources-section {
-            background-color: #f7f7f7;
-            border: none;
-            padding: 2em;
-            margin-top: 3em;
-            border-radius: 0;
-        }
-
-        .resource-item {
-            margin: 1.5em 0;
-            padding: 0;
-            border-bottom: none;
-        }
-
-        .resource-item ul {
-            padding-left: 1.5em;
-            margin: 1em 0;
-        }
-
-        .resource-item li {
-            margin-bottom: 1em;
-        }
-
-        p {
-            margin: 1em 0;
-            font-size: 1.1em;
-            line-height: 1.8;
-            color: #333;
-        }
-
-        @media (max-width: 768px) {
-            body {
-                padding: 15px;
-            }
-            
-            .content-wrapper {
-                padding: 0 15px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.3em;
-            }
+            background-color: #f5f5f5;
+            padding: 30px;
+            margin-top: 40px;
+            border-radius: 4px;
         }
     </style>
 </head>
 <body>
-    <div class="content-wrapper">
-        <a href="index.html" class="back-link">← Back to Home</a>
-        
+    <div class="top-bar">
+        Conducting cutting-edge planetary health research
+        <div class="social-links">
+            <a href="#"><img src="assets/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="assets/linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="#"><img src="assets/twitter-icon.png" alt="Twitter"></a>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="logo">
+                <img src="assets/wits-phr-logo.png" alt="Wits PHR Logo">
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">Our Research</a>
+                <a href="#" class="active">Sustainability</a>
+                <a href="#">Resources</a>
+                <a href="#">Contact Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="hero">
         <h1>Our Sustainability Approach</h1>
-        
-        <div class="approach-section">
-            <p>At Wits Planetary Health Research, we are committed to implementing evidence-based sustainability measures across all our research activities. Our approach is comprehensive and based on established frameworks and international best practices.</p>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <p>At Wits Planetary Health Research, sustainability principles are deeply embedded within our organizational culture and daily practices. As leaders in planetary health research, we continuously drive advocacy initiatives for robust environmental accountability within academic institutions and broader society.</p>
+            
+            <p>Our team has demonstrated success in implementing carbon mitigation frameworks across various research programs, including <a href="https://wellcome.org/grant-funding/people-and-projects/grants-awarded/co-produced-complex-heat-adaptation-interventions" target="_blank">Wellcome Trust</a> <a href="https://wellcome.org/grant-funding/people-and-projects/grants-awarded/investigating-biological-pathways-heat-exposure" target="_blank">projects</a> and the <a href="https://www.high-horizons.eu/topics/evaluate-the-surveillance-early-warning-systems-and-health-facility-adaptive-and-mitigation-actions-including-cost-effectiveness/" target="_blank">European Union HIGH Horizons initiative</a>. Through systematic quantification of emissions, evidence-based modeling, and strategic interventions, we've achieved significant reductions in our environmental impact. We actively share our expertise with other organizations, including our <a href="presentations/sustainability/index.html">strategic guidance to the South African Medical Research Council's Directors Symposium</a>, and collaborate with international partners like <a href="https://www.tcd.ie/sustainability/" target="_blank">Trinity College Dublin</a>, which brings strong complementary expertise through their Vice President for Biodiversity and Climate Action and comprehensive green campus programme.</p>
         </div>
 
-        <div class="strategy-card">
-            <h2>Reduce, Reuse, Recycle</h2>
-            <ul>
-                <li>Pursue <a href="https://www.mygreenlab.org/" target="_blank">My Green Lab certification</a> across participating laboratories by 2025, supported by dedicated sustainability managers</li>
-                <li>Optimization of ultralow freezer storage to -70°C and implementation of equipment-sharing arrangements between research partners</li>
-                <li>Reduction of single-use plastics and alignment with standards from accredited green laboratory initiatives</li>
-                <li>Implementation of strategies from the <a href="presentations/carbomica/index.html">CARBOMICA Framework</a> and <a href="presentations/sustainability/index.html">Carbon Footprint in Research Activities</a> guidelines</li>
+        <div class="section">
+            <h2>Our Organizational Commitments</h2>
+
+            <h3>Reduce, Reuse, Recycle</h3>
+            <ul class="commitment-list">
+                <li>Institute-wide implementation of <a href="https://www.mygreenlab.org/" target="_blank">My Green Lab certification</a> across our laboratories by 2025, supported by dedicated sustainability managers</li>
+                <li>Standardized protocols for ultralow freezer storage at -70°C and equipment-sharing arrangements, aligned with <a href="https://www.tcd.ie/sustainability/assets/pdf/TCD-Sustainability-Policy.pdf" target="_blank">international sustainability best practices</a></li>
+                <li>Comprehensive waste reduction strategy, including minimizing single-use plastics and implementing standardized waste segregation protocols</li>
+                <li>Implementation of proven sustainability strategies as documented in our <a href="presentations/carbomica/index.html">CARBOMICA Framework</a> (with accompanying <a href="https://github.com/Logic06183/Carbomica_App_Django" target="_blank">resource allocation tool</a>) and <a href="presentations/sustainability/index.html">Carbon Footprint Assessment</a> initiatives</li>
             </ul>
-        </div>
 
-        <div class="strategy-card">
-            <h2>Sustainable Data and Computing Practices</h2>
-            <ul>
-                <li>WhatsApp-based EMAs for paperless data collection</li>
-                <li>Cloud-based data storage and optimization using tools from <a href="https://github.com/HIGH-Horizons/carbomica" target="_blank">HIGH Horizons</a></li>
-                <li>Implementation of <a href="https://www.green-algorithms.org/" target="_blank">Green Algorithms</a> methodology for sustainable computational science</li>
-                <li>Environmentally conscious data analysis practices for large-scale modeling</li>
-                <li>Pre-purchase institutional inventory checks following international best practices</li>
+            <h3>Sustainable Data and Computing</h3>
+            <ul class="commitment-list">
+                <li>Organization-wide adoption of digital data collection systems, including WhatsApp-based EMAs for field research</li>
+                <li>Centralized data management using cloud-based tools developed through our <a href="https://www.high-horizons.eu/topics/evaluate-the-surveillance-early-warning-systems-and-health-facility-adaptive-and-mitigation-actions-including-cost-effectiveness/" target="_blank">HIGH Horizons</a> and <a href="https://github.com/HIGH-Horizons/carbomica" target="_blank">CARBOMICA</a> initiatives</li>
+                <li>Standard implementation of <a href="https://www.green-algorithms.org/" target="_blank">Green Algorithms</a> methodology across all computational research</li>
+                <li>Environmental impact assessment integrated into all data analysis workflows</li>
+                <li>Sustainable procurement practices aligned with institutional inventory management</li>
             </ul>
-        </div>
 
-        <div class="strategy-card">
-            <h2>Travel Optimization</h2>
-            <ul>
-                <li>Alignment of participant visits with routine antenatal care schedules</li>
-                <li>Engagement of local research teams for community-based activities</li>
-                <li>Virtual-first meeting policy with flight justification using the <a href="https://www.sustainabilityexchange.ac.uk/travel_better_package" target="_blank">Sustainability Exchange Travel Better package</a></li>
-                <li>Carbon offset through verified providers</li>
+            <h3>Travel Optimization</h3>
+            <ul class="commitment-list">
+                <li>Strategic alignment of field research with existing community healthcare schedules</li>
+                <li>Priority recruitment from local communities for field-based research positions</li>
+                <li>Institute-wide virtual-first meeting policy, with travel decisions guided by the <a href="https://www.sustainabilityexchange.ac.uk/travel_better_package" target="_blank">Sustainability Exchange Travel Better package</a></li>
             </ul>
-        </div>
 
-        <div class="strategy-card">
-            <h2>Monitoring and Accountability</h2>
-            <ul>
-                <li>Implementation of validated emission measurement frameworks</li>
-                <li>Quarterly progress reviews using My Green Lab metrics</li>
-                <li>Documentation of emission reduction achievements (up to 68%) through strategic interventions</li>
-                <li>Knowledge sharing through our open-access platform</li>
+            <h3>Accountability</h3>
+            <ul class="commitment-list">
+                <li>Regular environmental impact assessments using validated measurement frameworks</li>
+                <li>Quarterly sustainability reviews across all research programs</li>
+                <li>Knowledge sharing through our open-access platform and research community engagement</li>
             </ul>
         </div>
 
         <div class="resources-section">
-            <h2>Key Resources and Guidelines</h2>
-            <div class="resource-item">
-                <p>Our strategies align with:</p>
-                <ul>
-                    <li><a href="https://wellcome.org/grant-funding/guidance/environmental-sustainability-policy" target="_blank">Wellcome Trust's environmental policy</a></li>
-                    <li><a href="https://www.ucl.ac.uk/sustainable/leaf/leaf-resources-and-materials" target="_blank">LEAF Framework Resources</a></li>
-                    <li><a href="https://www.aku.edu/about/environment/Documents/Guide%20to%20the%20Aga%20Khan%20Development%20Networks%20Carbon%20Management%20Tool.pdf" target="_blank">AKDN Carbon Management Tool Guide</a></li>
-                    <li><a href="https://climahealth.info/resource-library/carbomica-a-carbon-mitigation-and-resource-allocation-modelling-tool-for-the-healthcare-sector-in-east-africa/" target="_blank">CARBOMICA Resource Allocation Modelling Tool</a></li>
-                </ul>
-            </div>
+            <h2>Our Framework and Guidelines</h2>
+            <p>Our organizational approach is guided by leading international frameworks:</p>
+            <ul class="commitment-list">
+                <li><a href="https://wellcome.org/grant-funding/guidance/environmental-sustainability-policy" target="_blank">Wellcome Trust's environmental policy</a></li>
+                <li><a href="https://www.tcd.ie/sustainability/" target="_blank">Trinity College Dublin Sustainability Framework</a></li>
+                <li>AKDN Carbon Management: <a href="https://www.aku.edu/about/environment/Documents/Guide%20to%20the%20Aga%20Khan%20Development%20Networks%20Carbon%20Management%20Tool.pdf" target="_blank">Implementation Guide</a> and <a href="presentations/sustainability/AKDN Health Carbon Management Tool V1.6.1WHO.xlsx">Tool V1.6.1</a> (contact AKDN for latest version)</li>
+                <li><a href="https://github.com/Logic06183/Carbomica_App_Django" target="_blank">CARBOMICA Resource Allocation Tool</a> and <a href="https://climahealth.info/resource-library/carbomica-a-carbon-mitigation-and-resource-allocation-modelling-tool-for-the-healthcare-sector-in-east-africa/" target="_blank">Framework Documentation</a></li>
+            </ul>
         </div>
-
-        <footer class="footer">
-            <div class="logo-container">
-                <div class="logo-item">
-                    <img src="images/wits-planetary-health-logo.png" alt="Wits Planetary Health Research Logo">
-                    <p>Wits Planetary Health Research</p>
-                </div>
-                <div class="logo-item">
-                    <img src="images/idori-logo.png" alt="IDORI Logo">
-                    <p>IDORI</p>
-                </div>
-                <div class="logo-item">
-                    <img src="images/wits-university-logo.png" alt="University of the Witwatersrand Logo">
-                    <p>University of the Witwatersrand</p>
-                </div>
-            </div>
-            <p> 2025 Wits Planetary Health Research. All rights reserved.</p>
-        </footer>
     </div>
 </body>
 </html>
